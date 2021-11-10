@@ -1,8 +1,8 @@
-name: 
+name: "Review"
 description: Give a review of the material
 title: "[Review]: "
 labels: ["review", "feedback"]
-ody:
+body:
   - type: markdown
     attributes:
       value: |
