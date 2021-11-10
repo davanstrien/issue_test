@@ -16,7 +16,7 @@ body:
     validations:
       required: false
   - type: textarea
-    id: tl;dr
+    id: summary
     attributes:
       label: tl;dr
       description: Your overall summary of the material
