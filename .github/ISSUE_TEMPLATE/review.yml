@@ -1,12 +1,12 @@
 name: "Review"
-description: Give a review of the material
-title: "[Review]: "
+description: Review our tutorial
+title: "[Review by]: "
 labels: ["review", "feedback"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to give us feedback!
+        Thanks for taking the time to give us feedback! We created this template to help prompt feedback. Feel free to follow it as much or as little as you like
   - type: input
     id: contact
     attributes:
@@ -21,40 +21,30 @@ body:
       label: tl;dr
       description: Your overall summary of the material
       placeholder: I thought this was...
-      value: "A bug happened!"
+      value: "I thought the tutorial was..."
     validations:
       required: true
   - type: dropdown
-    id: version
+    id: experience
     attributes:
-      label: Version
-      description: What version of our software are you running?
+      label: Experience level
+      description: How experienced do you consider yourself in Machine Learning?
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - Beginner
+        - Intermediate
+        - Expert
     validations:
       required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
   - type: checkboxes
-    id: terms
+    id: sector
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      label: What sector(s) do you align most closely with
+      description: You may select more than one.
       options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+        - Libraries
+        - Museums
+        - University/Higher-education
+        - Galleries
+        - Archives
+        - Other
+
